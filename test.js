@@ -7,3 +7,5 @@ const evenNumber = (numbers) => {
 const name = "take";
 
 console.log(name);
+
+//
