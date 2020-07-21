@@ -1,9 +1,7 @@
-const numbers = [1, 2, 3, 4, , 5];
+const bottles = [...Array(101).keys()].slice(1);
 
-const evenNumber = (numbers) => {
-  if (numbers % 2 === 0) return;
-};
+const freeBottles = bottles.filter((bottle) => bottle % 3 === 0);
 
-const name = "take";
+const totalBottles = bottles.length + freeBottles.length;
 
-console.log(name);
+console.log(totalBottles);
