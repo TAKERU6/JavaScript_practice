@@ -1,7 +1,2 @@
-const bottles = [...Array(101).keys()].slice(1);
-
-const freeBottles = bottles.filter((bottle) => bottle % 3 === 0);
-
-const totalBottles = bottles.length + freeBottles.length;
-
-console.log(totalBottles);
+const bonus_drink = (amount) =>
+  amount < 3 ? amount : Math.floor(amount + (amount - 1) / 2);
