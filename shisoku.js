@@ -3,12 +3,7 @@
 
 const numbers = [...Array(100).keys()].map((i) => ++i);
 
-const selectNumbers = (numbers) => {
-  const selectNumber = numbers.filter(
-    (number) =>
-      (number % 9 === 1 && number > 1) || (number % 7 === 2 && number > 2)
-  );
-  return selectNumber;
-};
+const selectNumbers = (numbers) =>
+  numbers.filter((number) => number % 9 === 1 && number % 7 === 2);
 
 console.log(selectNumbers(numbers));
