@@ -4,7 +4,7 @@
 const distance = 4530;
 
 const taxiPrice = (distance) => {
-  if (distance < 1000) return 610;
+  if (distance < 1279) return 610;
   const addDistance = distance - 1000;
   const addPrice = Math.floor(addDistance / 280) * 60;
   const totalPrice = addPrice + 610;
